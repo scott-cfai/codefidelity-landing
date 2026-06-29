@@ -40,10 +40,19 @@ a:hover { text-decoration: underline; }
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+  flex-wrap: nowrap;
+}
+
+.brand-link {
+  display: inline-flex;
+  flex-shrink: 0;
+  padding: 8px;
+  border-radius: 10px;
+  background: #000;
 }
 
 .logo-nav {
-  width: min(220px, 42vw);
+  width: min(61.875px, 11.8125vw);
   height: auto;
   display: block;
 }
@@ -57,6 +66,7 @@ a:hover { text-decoration: underline; }
   display: flex;
   align-items: center;
   gap: 8px;
+  flex-shrink: 0;
 }
 
 .site-nav a {
@@ -414,7 +424,11 @@ footer {
   }
 
   .site-header-inner {
-    flex-direction: column;
-    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .site-nav a {
+    padding: 8px 10px;
+    font-size: 0.9rem;
   }
 }
