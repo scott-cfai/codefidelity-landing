@@ -1,0 +1,9 @@
+.git/
+.gitignore
+.wrangler/
+.DS_Store
+CodeFidelityAI_Master_Knowledge_Base_v1.md
+README.md
+README.txt
+index.html.bak
+wrangler.toml
