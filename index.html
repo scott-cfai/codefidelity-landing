@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeFidelity AI | Enterprise Code Intelligence</title>
+  <meta name="description" content="CodeFidelity AI delivers enterprise code search, AI code governance, release intelligence, and software supply chain insight — so engineering, security, and leadership teams can understand, govern, and trust their code." />
+  <link rel="icon" href="assets/codefidelity1.svg" type="image/svg+xml" />
+  <meta property="og:title" content="CodeFidelity AI | Enterprise Code Intelligence" />
+  <meta property="og:description" content="Know what's really in your code. Enterprise code intelligence for search, security, AI governance, and release awareness." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://codefidelity.ai/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="CodeFidelity AI | Enterprise Code Intelligence" />
+  <meta name="twitter:description" content="Know what's really in your code. Enterprise code intelligence for search, security, AI governance, and release awareness." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: rgba(255, 255, 255, 0.06);
+      --panel-border: rgba(255, 255, 255, 0.12);
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-2: #22c55e;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.22), transparent 32rem),
+        radial-gradient(circle at top right, rgba(34, 197, 94, 0.14), transparent 28rem),
+        var(--bg);
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(100% - 32px, var(--max));
+      margin: 0 auto;
+      padding: 56px 0 44px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 32px 0 52px;
+    }
+
+    .logo {
+      width: min(760px, 100%);
+      height: auto;
+      margin: 0 auto 24px;
+      display: block;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      padding: 6px 12px;
+      border: 1px solid var(--panel-border);
+      border-radius: 999px;
+      color: var(--accent);
+      background: rgba(56, 189, 248, 0.08);
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 6vw, 5rem);
+      line-height: 1;
+      letter-spacing: -0.06em;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 24px auto 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.35rem);
+    }
+
+    .hero-problem {
+      max-width: 680px;
+      margin: 20px auto 0;
+      color: var(--text);
+      font-size: 1.05rem;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: var(--bg);
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.15s ease, transform 0.15s ease;
+    }
+
+    .cta:hover {
+      text-decoration: none;
+      background: #7dd3fc;
+      transform: translateY(-1px);
+    }
+
+    .section {
+      margin-top: 28px;
+    }
+
+    .section-header {
+      max-width: 780px;
+      margin: 0 auto 28px;
+      text-align: center;
+    }
+
+    .section-header h2 {
+      margin: 0;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .section-header p {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .use-cases {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      padding: 24px;
+      border: 1px solid var(--panel-border);
+      border-radius: 22px;
+      background: var(--panel);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 1.18rem;
+      line-height: 1.2;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+      border-radius: 14px;
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--accent);
+      font-size: 1.35rem;
+    }
+
+    .future {
+      margin-top: 32px;
+      padding: 30px;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 26px;
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.12), rgba(34, 197, 94, 0.08));
+      text-align: center;
+    }
+
+    .future h2 {
+      margin: 0 0 10px;
+      font-size: clamp(1.5rem, 3vw, 2.35rem);
+      letter-spacing: -0.03em;
+    }
+
+    .future p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 28px;
+      border-top: 1px solid var(--panel-border);
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .copyright {
+      margin: 12px 0 0;
+      font-size: 0.88rem;
+      opacity: 0.75;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    @media (max-width: 860px) {
+      .cards,
+      .use-cases {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        padding-top: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <img class="logo" src="assets/codefidelity1.svg" alt="CodeFidelity AI logo" />
+      <div class="eyebrow">Coming Soon</div>
+      <h1 id="page-title">Know what’s really in your code.</h1>
+      <p>
+        CodeFidelity AI helps organizations understand, govern, and trust the software they build — with enterprise code search, release intelligence, and security insight for the age of AI-generated software.
+      </p>
+      <p class="hero-problem">
+        Organizations cannot secure, modernize, or optimize software they do not understand.
+      </p>
+      <a class="cta" href="mailto:scott@codefidelity.ai">Get in touch</a>
+    </section>
+
+    <section class="section" aria-labelledby="value-title">
+      <div class="cards">
+        <article class="card">
+          <div class="icon" aria-hidden="true">⌘</div>
+          <h3>Code Intelligence</h3>
+          <p>Make large codebases easier to understand, navigate, and trust.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">◇</div>
+          <h3>Security Insight</h3>
+          <p>Support vulnerability analysis, patch verification, and source-of-truth discovery.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">✦</div>
+          <h3>AI Readiness</h3>
+          <p>Bring clarity and governance to rapidly expanding AI-generated code.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="use-cases-title">
+      <div class="section-header">
+        <h2 id="use-cases-title">Use Cases</h2>
+        <p>
+          Practical ways CodeFidelity AI can help engineering, security, and leadership teams gain confidence in complex software environments.
+        </p>
+      </div>
+
+      <div class="use-cases">
+        <article class="card">
+          <div class="icon" aria-hidden="true">🤖</div>
+          <h3>Understand AI-Generated Code</h3>
+          <p>Review what AI assistants create before it reaches production, including behavior, risk, ownership, and alignment with engineering standards.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">🔍</div>
+          <h3>Find Code Instantly</h3>
+          <p>Search across large codebases to locate implementations, APIs, security-sensitive logic, duplicated patterns, and product-specific behavior.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">🛡</div>
+          <h3>Verify Security Fixes</h3>
+          <p>Determine whether vulnerability fixes are present across releases, branches, products, and long-lived software versions.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">📦</div>
+          <h3>Understand Third-Party Software</h3>
+          <p>Identify where open source, vendor, or reused components appear and assess their impact before updates, audits, or disclosures.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">📈</div>
+          <h3>Measure AI Code Quality</h3>
+          <p>Track risky patterns, quality concerns, and maintainability issues as AI-generated code becomes a larger part of the development lifecycle.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">🏢</div>
+          <h3>Enterprise Code Intelligence</h3>
+          <p>Give engineering, security, compliance, and executive teams a trusted view into what is actually inside millions of lines of source code.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="future" aria-labelledby="future-title">
+      <h2 id="future-title">The enterprise system of record for software knowledge.</h2>
+      <p>
+        Every engineering decision should begin with trustworthy code intelligence. CodeFidelity AI is building that foundation for modern software teams.
+      </p>
+    </section>
+
+    <footer>
+      <p>For inquiries, contact <a href="mailto:scott@codefidelity.ai">scott@codefidelity.ai</a></p>
+      <p class="copyright">© 2026 CodeFidelity AI</p>
+    </footer>
+  </main>
+</body>
+</html>
