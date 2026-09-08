@@ -1,0 +1,25 @@
+{
+  "name": "codefidelity-landing",
+  "version": "1.0.0",
+  "description": "Coming-soon landing page for [CodeFidelity AI](https://codefidelity.ai) — enterprise code intelligence for search, security, AI governance, and release awareness.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scott-cfai/codefidelity-landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/scott-cfai/codefidelity-landing/issues"
+  },
+  "homepage": "https://github.com/scott-cfai/codefidelity-landing#readme",
+  "devDependencies": {
+    "wrangler": "^4.110.0"
+  }
+}

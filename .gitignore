@@ -2,3 +2,4 @@
 *.swp
 *~
 .wrangler/
+node_modules/
